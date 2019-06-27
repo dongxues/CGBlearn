@@ -21,7 +21,7 @@ public class ItemServiceFallback implements FallbackProvider {
 	@Override
 	public String getRoute() {
 	    //当执行item-service失败，
-	    //应用当前这个降级类
+	    //应用当前这个这个降级类
 		return "item-service";
 		//星号和null都表示所有微服务失败都应用当前降级类
 		//"*"; //null;
